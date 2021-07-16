@@ -1,0 +1,18 @@
+@import 'abstracts/setting.scss',
+'abstracts/mixins.scss';
+
+@import 'base/theme_default.scss';
+
+@import 'base/layouts/lyt_programs.scss'controls;
+
+
+@import 'components/program_slctr.scss';
+
+body {
+    width:100vw;
+    height:100vh;
+    padding:8px;
+    overflow-x:hidden;
+    margin: 0;
+    box-sizing: border-box;
+}
