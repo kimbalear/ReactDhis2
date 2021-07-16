@@ -15,6 +15,7 @@
     border-radius: $radius;
     padding: 8px;
     margin: 0 0 8px;
+    box-sizing: border-box;
 
     .program_bsct-icon {
         grid-area: icon;

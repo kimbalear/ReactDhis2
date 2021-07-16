@@ -11,8 +11,15 @@
 body {
     width:100vw;
     height:100vh;
-    padding:8px;
+    padding:0px;
     overflow-x:hidden;
     margin: 0;
     box-sizing: border-box;
 }
+
+.App {
+    width:100vw;
+    height:100vh;
+    padding: 8px 16px;
+    box-sizing: border-box;
+  }

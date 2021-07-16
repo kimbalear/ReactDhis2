@@ -14,10 +14,7 @@ import ProgramSlctr from './components/programs/programs_lst';
 function App() {
   return (
     <div className="App">
-      
-      <body>
         <ProgramSlctr/>
-      </body>
     </div>
   );
 }
