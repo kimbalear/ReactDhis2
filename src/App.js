@@ -1,7 +1,7 @@
 import logo from './assets/images/logo.svg';
 import './assets/css/App.css';
 
-import ProgramSlctr from './components/programs/programs_lst';
+import ProgramSlctr from './components/bar_slctr/bar_slctr';
 /*
 <img src={logo} className="App-logo" alt="logo" />
         <p>
