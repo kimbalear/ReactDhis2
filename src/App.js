@@ -1,20 +1,10 @@
-import logo from './assets/images/logo.svg';
 import './assets/css/App.css';
+import ProgramList from './assets/pages/program_list/programlist_pg'
 
-import ProgramSlctr from './components/bar_slctr/bar_slctr';
-/*
-<img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <header className="App-header">
-        
-      </header>
-*/
 function App() {
   return (
     <div className="App">
-        <ProgramSlctr/>
+        <ProgramList/>
     </div>
   );
 }
