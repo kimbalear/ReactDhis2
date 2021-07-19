@@ -12,15 +12,21 @@ import iconDel from '../../assets/images/i-delete.svg';
 import iconExp from '../../assets/images/i-expand.svg';
 
 class programSlctr extends Component {
+    
+
+    componentDidMount(){
+
+    }
 
     state = {
-        titleprg: programs
+        pgrms: programs
     }
 
     render() {
         return <React.Fragment>
-            {this.state.titleprg.map(e =>
-                <div className="cmpt_program_bsct">
+            {console.log(programs)}
+            {this.state.pgrms.map(e =>
+                <div className="cmpt_program_bsct" key={e.id}>
                     <div className="program_bsct-icon"><img src={iconProgram} alt="prg" /></div>
                     <div className="program_bsct-title">{e.title} <span>( {e.prg_stages} ) program stages</span>
                     </div>
