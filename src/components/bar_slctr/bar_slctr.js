@@ -24,11 +24,11 @@ class programSlctr extends Component {
 
     render() {
         return <React.Fragment>
-            {console.log(programs)}
+
             {this.state.pgrms.map(e =>
                 <div className="cmpt_program_bsct" key={e.id}>
                     <div className="program_bsct-icon"><img src={iconProgram} alt="prg" /></div>
-                    <div className="program_bsct-title">{e.title} <span>( {e.prg_stages} ) program stages</span>
+                    <div className="program_bsct-title">{e.title} <span>( {e.contains} ) program stages</span>
                     </div>
                     <div className="program_bsct-warning_error slctr_hidden">
                         <img src={iconWarning} alt="wrng" />
