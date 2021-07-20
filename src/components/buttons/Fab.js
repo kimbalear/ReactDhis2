@@ -1,5 +1,4 @@
 import React from 'react'
-import '../../assets/scss/components/buttons/fab.scss'
 
 class Fab extends React.Component {
     render() {

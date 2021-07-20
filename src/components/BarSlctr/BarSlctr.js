@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../../assets/scss/mysass.scss';
 
 import iconProgram from '../../assets/images/i-program.svg';
 import iconWarning from '../../assets/images/i-warning.svg';

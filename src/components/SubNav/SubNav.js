@@ -1,5 +1,4 @@
 import React from 'react'
-import '../../assets/scss/components/sub_nav.scss'
 
 class SubNav extends React.Component {
     render() {
