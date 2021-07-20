@@ -1,5 +1,6 @@
 import React from 'react'
-import BarSlctr from '../../../components/bar_slctr/bar_slctr';
+import BarSlctr from '../../../components/BarSlctr/BarSlctr';
+import Welcome from '../../../components/Welcome';
 //import data from '../../../sample/programs.json';
 
 class ProgramList extends React.Component {
@@ -10,28 +11,7 @@ class ProgramList extends React.Component {
                 {
                     "id": 0,
                     "title": "ZW HNQIS2 VMMC A&B",
-                    "contains": 2,
-                    "wrngs": {
-                        "state": false,
-                        "nbr": 3,
-                        "message": [
-                            {
-                                "text1": "No form name set - the Long Name will be used",
-                                "text2": "Feedback active, but not feedback text",
-                                "text3": "Another low-importance violation..."
-                            }
-                        ]
-                    },
-                    "errors": [{
-                        "state": false,
-                        "nbr": 2,
-                        "message": [
-                            {
-                                "text1": "Numerator set, but not Order set",
-                                "text2": "Denominator not set (numerator is set)"
-                            }
-                        ]
-                    }]
+                    "contains": 2
                 },
                 {
                     "id": 1,
@@ -68,19 +48,24 @@ class ProgramList extends React.Component {
     }
 
     render() {
-        
+
         return (
-            this.state.prgms.map((prgm) => {
-               {console.log('hola: '+prgm.contains)}
-                return (
-                    <BarSlctr
-                        key={prgm.data.key}
-                        title={prgm.data.title}
-                        
-                    />
-                )
-            })
-     );
+            <div className="Container">
+                {console.log('hh: ' + this.state.key)}
+                <Welcome
+                    username="Urbano"
+                />
+                {this.state.data.map((exercise) => {
+                    return (
+                        <BarSlctr
+                            key={exercise.key}
+                            title={exercise.title}
+                            contains={exercise.contains} />
+                    )
+                })}
+            </div>
+
+        );
     }
 }
 
