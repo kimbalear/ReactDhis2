@@ -1,6 +1,7 @@
 import React from 'react'
 import BarSlctr from '../../../components/BarSlctr/BarSlctr';
 import SubNav from '../../../components/SubNav/SubNav';
+import Fab from '../../../components/buttons/Fab';
 
 class ProgramList extends React.Component {
     constructor(props) {
@@ -61,8 +62,8 @@ class ProgramList extends React.Component {
                             contains={exercise.contains} />
                     )
                 })}
+                <Fab/>
             </div>
-
         );
     }
 }
