@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-//import programs from '../../sample/programs.json';
 import '../../assets/scss/mysass.scss';
 
 import iconProgram from '../../assets/images/i-program.svg';

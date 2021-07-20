@@ -1,9 +1,9 @@
-import './assets/css/App.css';
-import ProgramList from './assets/pages/program_list/programlist_pg'
+//import './assets/css/App.css';
+import ProgramList from './assets/pages/ProgramList/ProgramList'
 
 function App() {
   return (
-    <div className="App">
+    <div>
         <ProgramList/>
     </div>
   );

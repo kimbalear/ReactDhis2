@@ -3,7 +3,7 @@
 
 @import 'base/theme_default.scss';
 
-@import 'base/layouts/lyt_programs.scss';
+@import 'base/pages/ProgramList.scss';
 
 
 @import 'components/bar_slctr.scss';
@@ -16,10 +16,3 @@ body {
     margin: 0;
     box-sizing: border-box;
 }
-
-.Container {
-    width:100vw;
-    height:100vh;
-    padding: 8px 16px;
-    box-sizing: border-box;
-  }

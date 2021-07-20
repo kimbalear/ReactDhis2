@@ -1,7 +1,6 @@
 import React from 'react'
 import BarSlctr from '../../../components/BarSlctr/BarSlctr';
-import Welcome from '../../../components/Welcome';
-//import data from '../../../sample/programs.json';
+import SubNav from '../../../components/SubNav/SubNav';
 
 class ProgramList extends React.Component {
     constructor(props) {
@@ -51,9 +50,8 @@ class ProgramList extends React.Component {
 
         return (
             <div className="Container">
-                {console.log('hh: ' + this.state.key)}
-                <Welcome
-                    username="Urbano"
+                <SubNav
+                    path="DHIS2 Config wizard"
                 />
                 {this.state.data.map((exercise) => {
                     return (
