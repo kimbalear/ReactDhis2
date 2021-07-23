@@ -54,7 +54,7 @@ class ProgramList extends React.Component {
         return (
             <div className="Container">
                 <SubNav
-                    path="DHIS2 Config wizard"
+                    Title="DHIS2 Config wizard"
                 />
                 {this.state.data.map((exercise) => {
                     return (
