@@ -9,10 +9,8 @@ import iconShare from '../../assets/images/i-share.svg';
 import iconDel from '../../assets/images/i-delete.svg';
 import iconExp from '../../assets/images/i-expand.svg';
 
-class BarSlctr extends React.Component {
-
-    render() {
-        const { key, title, contains } = this.props
+const BarSlctr = (props) => {
+    const { key, title, contains } = this.props
         return (
             <div className="cmpt_program_bsct" key={key}>
                 <div className="program_bsct-icon"><img src={iconProgram} alt="prg" /></div>
@@ -53,6 +51,5 @@ class BarSlctr extends React.Component {
                 </div>
             </div>
         )
-    }
 }
 export default BarSlctr;
