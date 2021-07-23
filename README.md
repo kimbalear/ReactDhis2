@@ -69,5 +69,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-
+## Sass
 ### 'npm install node-sass'
+
+## Dhis2 programs with programType HNQIS: 
+https://dev.psi-mis.org/api/programs.json?filter=attributeValues.attribute.id:eq:a9vu9ZxFLhu&filter=attributeValues.value:eq:HNQIS&fields=id,href,created,name,displayName,shortName,programStages[id,name,displayName,sortOrder],attributeValues
+
+
+### Used library:
+
+Modal component - https://www.npmjs.com/package/react-modal
+ 
+'json-server' - https://www.npmjs.com/package/json-server

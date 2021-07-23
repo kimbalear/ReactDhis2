@@ -3,9 +3,8 @@ import ProgramList from './assets/pages/ProgramList/ProgramList'
 
 function App() {
   return (
-    <div>
-        <ProgramList/>
-    </div>
+    <React.StrictMode><ProgramList/>
+    </React.StrictMode>
   );
 }
 
