@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-import iconProgram from '../../assets/images/i-program.svg';
-import iconWarning from '../../assets/images/i-warning.svg';
-import iconError from '../../assets/images/i-error.svg';
-import iconMoreVert from '../../assets/images/i-more_vert.svg';
-import iconEdit from '../../assets/images/i-edit.svg';
-import iconShare from '../../assets/images/i-share.svg';
-import iconDel from '../../assets/images/i-delete.svg';
-import iconExp from '../../assets/images/i-expand.svg';
+import iconProgram from '../assets/images/i-program.svg';
+import iconWarning from '../assets/images/i-warning.svg';
+import iconError from '../assets/images/i-error.svg';
+import iconMoreVert from '../assets/images/i-more_vert.svg';
+import iconEdit from '../assets/images/i-edit.svg';
+import iconShare from '../assets/images/i-share.svg';
+import iconDel from '../assets/images/i-delete.svg';
+import iconExp from '../assets/images/i-expand.svg';
 
 const BarSlctr = (props) => {
         return (
