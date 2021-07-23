@@ -4,7 +4,7 @@ import './assets/css/index.css';
 import './assets/scss/mysass.scss';
 //import App from './App';
 //import Exercises from './assets/pages/Exercises'
-import ProgramList from './assets/pages/ProgramList/ProgramList'
+import ProgramList from './assets/pages/ProgramList'
 
 import reportWebVitals from './reportWebVitals';
 

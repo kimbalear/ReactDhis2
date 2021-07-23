@@ -1,7 +1,7 @@
 import React from 'react'
-import BarSlctr from '../../../components/BarSlctr';
-import SubNav from '../../../components/SubNav';
-import Fab from '../../../components/Fab';
+import BarSlctr from '../../components/BarSlctr';
+import SubNav from '../../components/SubNav';
+import Fab from '../../components/Fab';
 
 //const ProgramList
 
