@@ -1,11 +1,9 @@
 //import './assets/css/App.css';
-import ProgramList from './assets/pages/ProgramList/ProgramList'
+import ProgramList from './assets/pages/ProgramList'
 
 function App() {
   return (
-    <React.StrictMode>
       <ProgramList />
-    </React.StrictMode>
   );
 }
 export default App;
