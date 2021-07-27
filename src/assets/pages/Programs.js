@@ -54,12 +54,12 @@ class Programs extends React.Component {
                 <SubNav
                     Title="DHIS2 Config wizard"
                 />
-                {this.state.data.map((exercise) => {
+                {this.state.data.map((programs) => {
                     return (
                         <BarSlctr
-                            key={exercise.key}
-                            title={exercise.title}
-                            contains={exercise.contains} />
+                            key={programs.key}
+                            title={programs.title}
+                            contains={programs.contains} />
                     )
                 })}
                 <Fab/>
