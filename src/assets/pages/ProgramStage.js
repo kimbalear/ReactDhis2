@@ -52,7 +52,7 @@ class ProgramStage extends React.Component {
         return (
             <div className="Container">
                 <SubNav
-                    Title="DHIS2 Config wizard"
+                    Title="Path"
                 />
                 {this.state.data.map((programs) => {
                     return (

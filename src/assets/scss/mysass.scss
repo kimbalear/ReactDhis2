@@ -3,7 +3,8 @@
 
 @import 'base/theme_default.scss';
 
-@import 'base/pages/ProgramList.scss';
+@import 'base/pages/ProgramList.scss',
+'base/pages/ProgramStages.scss';
 
 
 @import 'components/bar_slctr.scss',
@@ -49,5 +50,12 @@ body {
     color: #FFF;
     border-radius: 4px;
     text-decoration: none;
+    box-sizing: border-box;
+  }
+
+  .wrapper {
+    width: 100vw;
+    height: 100vh;
+    padding: 8px 16px;
     box-sizing: border-box;
   }

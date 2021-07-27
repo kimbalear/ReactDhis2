@@ -1,5 +1,6 @@
 //import './assets/css/App.css';
 import Programs from './assets/pages/Programs'
+import ProgramStages from './assets/pages/ProgramStages'
 import {
   BrowserRouter as Router,
   Switch,
@@ -28,7 +29,7 @@ function App() {
           <Programs />
         </Route>
         <Route path="/program_stages">
-          Program Stages
+          <ProgramStages/>
         </Route>
         <Route path="/program_stage">
           Program Stage

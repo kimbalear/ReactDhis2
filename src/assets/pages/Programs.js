@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState, useEffect } from "react";
 import BarSlctr from '../../components/BarSlctr';
 import SubNav from '../../components/SubNav';
 import Fab from '../../components/Fab';
@@ -50,20 +51,28 @@ class Programs extends React.Component {
     render() {
 
         return (
-            <div className="Container">
-                <SubNav
-                    Title="DHIS2 Config wizard"
-                />
-                {this.state.data.map((programs) => {
-                    return (
-                        <BarSlctr
-                            key={programs.key}
-                            title={programs.title}
-                            contains={programs.contains} />
-                    )
-                })}
-                <Fab/>
+            <div className="wrapper">
+                <div class="layout_programs">
+                    <div class="fab-section">
+                        <Fab />
+                    </div>
+                    <div class="list-section">{this.state.data.map((programs) => {
+                        return (
+                            <BarSlctr
+                                key={programs.key}
+                                title={programs.title}
+                                contains={"(" + programs.contains + ") program stages"}
+                            />
+                        )
+                    })}</div>
+                    <div class="sub-bar-section">
+                        <SubNav
+                            Title="DHIS2 Config wizard"
+                        />
+                    </div>
+                </div>
             </div>
+
         );
     }
 }

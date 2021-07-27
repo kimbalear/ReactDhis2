@@ -13,7 +13,7 @@ const BarSlctr = (props) => {
         return (
             <div className="cmpt_program_bsct" key={props.key}>
                 <div className="program_bsct-icon"><img src={iconProgram} alt="prg" /></div>
-                <div className="program_bsct-title">{props.title} <span>( {props.contains} ) program stages</span>
+                <div className="program_bsct-title">{props.title} <span>{props.contains}</span>
                 </div>
                 <div className="program_bsct-warning_error slctr_hidden">
                     <img src={iconWarning} alt="wrng" />

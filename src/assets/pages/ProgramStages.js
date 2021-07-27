@@ -1,47 +1,77 @@
-import React from 'react'
+import React from 'react';
 import BarSlctr from '../../components/BarSlctr';
 import SubNav from '../../components/SubNav';
 import Fab from '../../components/Fab';
 
-class ProgramStages extends React.Component {
+class prgStagetages extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
             data: [
                 {
                     "id": 0,
-                    "title": "ZW HNQIS2 VMMC A&B",
-                    "contains": 2
+                    "title": "SOPs, Guidelines, Policies and Job Aid",
+                    "contains": 0
                 },
                 {
                     "id": 1,
-                    "title": "ZW HNQIS2 VMMC C: Client Record Review",
-                    "contains": 3
+                    "title": "Direct Observation of items",
+                    "contains": 23
                 },
                 {
                     "id": 2,
-                    "title": "ZW HNQIS2 VMMC D: Emergency Management",
-                    "contains": 2
+                    "title": "SIMS: Compliance with National Testing Algorithm and Strategy",
+                    "contains": 24
                 },
                 {
                     "id": 3,
-                    "title": "ZW HNQIS2 VMMC DHE CQI TOOL",
-                    "contains": 4
+                    "title": "SIMS: Service Referral and Linkage System",
+                    "contains": 25
                 },
                 {
                     "id": 4,
-                    "title": "ZW HNQIS2 VMMC E: Adequacy of Staffing",
-                    "contains": 2
+                    "title": "Facilities, Supplies & Equipment",
+                    "contains": 24
                 },
                 {
                     "id": 5,
-                    "title": "ZW HNQIS2 VMMC F: Surgical Equipment and Procedures",
-                    "contains": 2
+                    "title": "Patient and Client Flow",
+                    "contains": 24
                 },
                 {
                     "id": 6,
-                    "title": "ZW HNQIS2 VMMC G: Communication to Clients",
-                    "contains": 2
+                    "title": "Medicines",
+                    "contains": 24
+                },
+                {
+                    "id": 6,
+                    "title": "Supplies and Equipment - SIMS: Injection Safety",
+                    "contains": 24
+                },
+                {
+                    "id": 6,
+                    "title": "Supplies and Equipment - SIMS: Condom Access and Availability at Point of Service",
+                    "contains": 24
+                },
+                {
+                    "id": 6,
+                    "title": "Supplies and Equipment - Other Supplies",
+                    "contains": 24
+                },
+                {
+                    "id": 6,
+                    "title": "Supplies and Equipment - Equipment Storage (Visually inspect the storage area)",
+                    "contains": 24
+                },
+                {
+                    "id": 6,
+                    "title": "Surgical Kits",
+                    "contains": 24
+                },
+                {
+                    "id": 6,
+                    "title": "SIMS: Waste Management",
+                    "contains": 24
                 }
             ]
         }
@@ -50,22 +80,31 @@ class ProgramStages extends React.Component {
     render() {
 
         return (
-            <div className="Container">
-                <SubNav
-                    Title="DHIS2 Config wizard"
-                />
-                {this.state.data.map((programs) => {
-                    return (
-                        <BarSlctr
-                            key={programs.key}
-                            title={programs.title}
-                            contains={programs.contains} />
-                    )
-                })}
-                <Fab/>
+            <div className="wrapper">
+                <div class="layout_program_stages">
+                    <div class="sub-bar-section">
+                        <SubNav
+                            Title="Path"
+                        />
+                    </div>
+                    <div class="survey-section">survey-section</div>
+                    <div class="list-section">
+                        {this.state.data.map((prgStage) => {
+                            return (
+                                <BarSlctr
+                                    key={prgStage.key}
+                                    title={prgStage.title}
+                                    contains={"(" + prgStage.contains + ")" + " data elements"} />
+                            )
+                        })}
+                    </div>
+                    <div class="fab-section">
+                        <Fab />
+                    </div>
+                    <div class="cta-section">cta-section</div>
+                </div>
             </div>
-        );
+        )
     }
 }
-
-export default ProgramStages
+export default prgStagetages
