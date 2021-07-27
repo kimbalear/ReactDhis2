@@ -41,3 +41,13 @@ body {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
+
+  .btn-dark{
+    background-color: #333;
+    padding: 8px;
+    margin: 8px 4px;
+    color: #FFF;
+    border-radius: 4px;
+    text-decoration: none;
+    box-sizing: border-box;
+  }

@@ -1,22 +1,31 @@
 //import './assets/css/App.css';
-import ProgramList from './assets/pages/ProgramList'
+import Programs from './assets/pages/Programs'
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  NavLink
 } from 'react-router-dom';
 
 function App() {
   return (
     <Router>
-
+      <NavLink to="/programs" className="btn-dark" activeClassName="active">
+        Programs
+      </NavLink>
+      <NavLink to="/program_stages" className="btn-dark" activeClassName="active">
+        Program Stages
+      </NavLink>
+      <NavLink to="/program_stage" className="btn-dark" activeClassName="active">
+        Program Stage
+      </NavLink>
       <Switch>
         <Route path="/" exact>
-          Start
+          ...
         </Route>
         <Route path="/programs">
-          <ProgramList />
+          <Programs />
         </Route>
         <Route path="/program_stages">
           Program Stages
@@ -29,7 +38,6 @@ function App() {
         </Route>
       </Switch>
     </Router>
-
   );
 }
 export default App;

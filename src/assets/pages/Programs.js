@@ -3,9 +3,7 @@ import BarSlctr from '../../components/BarSlctr';
 import SubNav from '../../components/SubNav';
 import Fab from '../../components/Fab';
 
-//const ProgramList
-
-class ProgramList extends React.Component {
+class Programs extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -70,4 +68,4 @@ class ProgramList extends React.Component {
     }
 }
 
-export default ProgramList
+export default Programs
